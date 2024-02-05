@@ -1,0 +1,53 @@
+<div class="background-image-container"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="card card-overlay  mb-10">
+        <div class="card-body card-header">
+          <h2 class="card-title m-3"><%=@flat.name%></h2>
+          <p class="card-text m-3"><%=@flat.address%></p>
+        </div>
+      </div>
+      <div class="card card-overlay mt-3">
+      <div class="card-body card-header ">
+        <p class="card-text m-3"><%=@flat.description%></p>
+      </div>
+      </div>
+      <div class="card card-overlay mt-3">
+      <div class="card-body card-header ">
+        <div class="d-flex flex-column align-items-start ms-1">
+            <strong><h2 class="m-3">Details</h2></strong>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-people-line me-1 m-3"></i>
+              <span><%= @flat.number_of_guests %></span>
+              <i class="fa-solid fa-euro-sign me-1 m-3"></i>
+              <span><%= @flat.price_per_night %></span>
+          </div>
+      </div>
+     </div>
+     </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card card-overlay">
+        <div class="card-body m-3">
+          <h5 class="card-title m-3">Book this place!</h5>
+          <form>
+            <div class="form-group m-3">
+              <label for="fromDate">From:</label>
+              <input type="date" class="form-control" id="fromDate" name="fromDate">
+            </div>
+            <div class="form-group m-3">
+              <label for="toDate">To:</label>
+              <input type="date" class="form-control" id="toDate" name="toDate">
+            </div>
+            <button type="submit" class="btn btn-primary m-3">Book</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="social-share">
+      </div>
+    </div>
+  </div>
+</div>
